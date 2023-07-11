@@ -1,8 +1,17 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Rowdies } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter' 
+})
+
+const rowdies = Rowdies({
+  subsets: ['latin'],
+  weight: ["300", "400", "700"],
+  variable: '--font-rowdies'
+})
 
 export const metadata: Metadata = {
   title: 'Desenvolvedor | Rafael Barbosa',
@@ -19,7 +28,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/logo-circle.png" type="image/x-icon" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${rowdies.variable} bg-[#C2C6E3]`}>{children}</body>
     </html>
   )
 }
