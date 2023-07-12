@@ -18,7 +18,17 @@ module.exports = {
     fontFamily: {
       inter: ['var(--font-inter)', 'sans-serif'],
       rowdies: ['var(--font-rowdies)', 'sans-serif'],
-    }
+    },
+    // colors: {
+    //   'black-default': "#000000",
+    //   'white-default': '#FFFFFF',
+    //   'gray-default': '#1E1E1E',
+    //   'purple-default': '#FF00FF',
+    //   'violet-default': '#7100A7',
+    //   'blue-default': '#001AFF',
+    //   'cian-default': '#00FFFF',
+    //   'white-blue': '#C2C6E3'
+    // }
   },
   plugins: [],
 }
