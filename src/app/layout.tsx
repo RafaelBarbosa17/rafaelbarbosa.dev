@@ -10,7 +10,8 @@ const inter = Inter({
 const rowdies = Rowdies({
   subsets: ['latin'],
   weight: ["300", "400", "700"],
-  variable: '--font-rowdies'
+  variable: '--font-rowdies',
+  display: 'swap'
 })
 
 export const metadata: Metadata = {

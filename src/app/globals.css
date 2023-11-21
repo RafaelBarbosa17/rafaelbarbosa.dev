@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .link {
     width: 40px;
     height: 40px;
@@ -19,4 +18,19 @@
     fill: #3400b9;
     scale: 1.1;
     transition: all ease-in 200ms;
+}
+
+#profile-picture-effects {
+    border-radius: 1rem;
+    box-shadow: 15px 15px 0px 0px #172554,
+                15px 15px 0px 10px #ff00cc;
+    width: max-content;
+    height: max-content;
+}
+#profile-picture-effects-s {
+    border-radius: 1rem;
+    box-shadow: 10px 10px 0px 0px #172554,
+                10px 10px 0px 7.5px #ff00cc;
+    width: max-content;
+    height: max-content;
 }
