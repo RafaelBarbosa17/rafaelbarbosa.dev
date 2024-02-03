@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" as='image'/>
       </head>
       <body className={`${inter.variable} ${rowdies.variable} bg-[#C2C6E3]`}>{children}</body>
     </html>

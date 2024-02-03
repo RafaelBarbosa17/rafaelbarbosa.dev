@@ -22,15 +22,36 @@
 
 #profile-picture-effects {
     border-radius: 1rem;
-    box-shadow: 15px 15px 0px 0px #172554,
-                15px 15px 0px 10px #ff00cc;
     width: max-content;
     height: max-content;
 }
-#profile-picture-effects-s {
-    border-radius: 1rem;
-    box-shadow: 10px 10px 0px 0px #172554,
-                10px 10px 0px 7.5px #ff00cc;
-    width: max-content;
-    height: max-content;
+
+#effect-card-picture {
+    position: absolute;
+    border-radius: 2rem;
+    background: #ff00cc;
+    width: 205px;
+    height: 205px;
+    filter: blur(2px);
+    transform: translate(5px, 5px) rotate(15deg);
+}
+
+#get-job-card-picture {
+    position: absolute;
+    z-index: 1;
+    background: #ffff00;
+    width: 210px;
+    height: 210px;
+    transform: rotate(45deg);
+}
+
+#designtecnology-picture-effects {
+    box-shadow: 15px 15px 0px 0px #73ff00,
+                -15px -15px 0px 0px #73ff00;
+    border: solid 4px #73ff00;
+}
+
+#get-job-picture-effects {
+    box-shadow: 0px 0px 0px 10px #ffff00;
+    margin: 15px 0;
 }
