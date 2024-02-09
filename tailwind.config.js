@@ -19,6 +19,15 @@ module.exports = {
       inter: ['var(--font-inter)', 'sans-serif'],
       rowdies: ['var(--font-rowdies)', 'sans-serif'],
     },
+    animation: {
+      'fadeInLeft': 'fadeInLeft 500ms linear forward'
+    },
+    keyframes: {
+      fadeInLeft: {
+        '0%': {transition: 'translate(-100px, 0px)'},
+        '100%': {transition: 'translate(0px, 0px)'}
+      }
+    }
     // colors: {
     //   'black-default': "#000000",
     //   'white-default': '#FFFFFF',

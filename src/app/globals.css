@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 .link {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
+    border-radius: 6px;
+    padding: 4px;
 }
 
 .link svg {
@@ -14,10 +16,15 @@
     fill: #241943;
 }
 
-.link svg:hover {
-    fill: #3400b9;
+.link:hover {
     scale: 1.1;
     transition: all ease-in 200ms;
+}
+.link:hover svg {
+    fill: white;
+}
+.link svg:hover {
+    transition: all ease-in 300ms;
 }
 
 #profile-picture-effects {
@@ -28,21 +35,17 @@
 
 #effect-card-picture {
     position: absolute;
-    border-radius: 2rem;
+    border-radius: 5rem;
     background: #ff00cc;
-    width: 205px;
-    height: 205px;
-    filter: blur(2px);
-    transform: translate(5px, 5px) rotate(15deg);
+    filter: blur(3px);
+    transform: rotate(15deg);
 }
 
 #get-job-card-picture {
     position: absolute;
     z-index: 1;
     background: #ffff00;
-    width: 210px;
-    height: 210px;
-    transform: rotate(45deg);
+    transform: rotate(-25deg);
 }
 
 #designtecnology-picture-effects {
