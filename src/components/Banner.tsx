@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <section id="Banner" className="flex flex-col items-center">
       <Header />
-      <div className="min-h-[90vh] max-h-min w-screen max-w-[1000px] flex justify-start pt-8">
+      <div className="min-h-[90vh] max-h-min w-screen max-w-[1300px] flex justify-around items-center p-8">
         <div className="px-4 py-6 flex flex-col">
           <Animate style="overflow-hidden">
             <h2 className="font-rowdies mg:text-6xl text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-fuchsia-600">
@@ -61,6 +61,15 @@ const Banner = () => {
             </div>
           </Animate>
         </div>
+        <Animate hidden={{ opacity: 0, x:100 }}>
+          <Image 
+            src={'/profile1.png'}
+            width={550}
+            height={550}
+            alt="picture"
+            className="w-[350px] h-[350px] md:block hidden object-contain"
+          />
+        </Animate>
       </div>
     </section>
   );
